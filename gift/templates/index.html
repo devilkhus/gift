@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><h2>Happy Birthday</h2></title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <!-- Click Me Button -->
+    <button id="clickMeButton">Click Me</button>
+
+    <!-- Video Background -->
+    <div id="videoContainer">
+        <video id="bgVideo" loop muted playsinline>
+            <source src="https://drive.google.com/file/d/1bBDEzngc7fnDtloDVrcelb6TDqXOAp-4/view?usp=sharing" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio id="birthdayAudio" loop>
+            <source src="{{ url_for('static', filename='music.mp3') }}" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <!-- Happy Birthday Text -->
+    <div id="birthdayText"><h2> Happy Birthday Iti</h2>
+    <h5>~Khushwant ;)</h5>
+    <h6>Wishing you all the happiness in the world on your special day! 🎈🥳</h6>
+    </div>
+          
+    <!-- Hidden Message Section -->
+    <div id="messageSection">
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
